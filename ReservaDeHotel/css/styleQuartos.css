@@ -33,5 +33,18 @@
 body {
     background-color: #fcfcf0;
     margin: 0; 
-    padding-top: 50px; 
+    padding-top: 100px; 
+}
+
+.imagemTitulo{
+    justify-content: center;
+    padding-left: 10%;
+}
+
+.imagemTitulo img{
+    align-items: center;
+    width: 60%;
+    height: 450px; 
+    object-fit: cover;
+    display: block;
 }
