@@ -29,14 +29,20 @@ hr {
     margin-top: 30px;
 }
 
-header {
+.header {
+    height: 50%;
     background-color: #fff;
-    margin-top: 50px;
+    margin-top: 0px;
     margin-bottom: 20px;
     margin-left: 50px;
     margin-right: 50px;
     display: flex;
     justify-content: space-between;
+}
+
+.logo img{
+    width: 80%;
+    height: auto;
 }
 
 .redes-sociais>ul {
@@ -45,6 +51,7 @@ header {
     align-items: center;
     list-style: none;
     padding: 0;
+    padding-top: 20px;
     margin: 0;
     gap: 12px;
 }
@@ -56,19 +63,26 @@ header {
     text-align: center;
 }
 
+.emailIcon {
+    height: 50px;
+    align-items: center;
+    margin-top: 20px;
+}
+
 .redes-sociais>ul>li:hover {
     transform: scale(1.07);
 }
 
+
+
 .header-end {
-    display: inline-flex;
+    margin-top: 20px;
+    display: flex;
     align-items: center;
-    padding: 10px;
     border: 2px solid #b8b5b0;
     border-radius: 40px;
     width: 140px;
-    max-height: 53px;
-    justify-content: center;
+    max-height: 45px;
     justify-content: space-around;
 
 }
@@ -97,6 +111,13 @@ header {
     justify-content: center;
     gap: 45px;
     margin-bottom: 50px;
+    
+}
+
+.quartos a{
+    color: black;
+    text-decoration: none;
+    
 }
 
 .quarto-deluxe,
@@ -107,6 +128,14 @@ header {
     border: 1px solid #ccc;
     border-radius: 30px;
     padding: 20px;
+    width: 30%;
+}
+
+.quarto-deluxe:hover,
+.quarto-master:hover,
+.quarto-standard:hover {
+    transform: scale(1.07);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .categoria-quarto {
