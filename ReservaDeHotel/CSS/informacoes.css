@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+.corpo {
+  flex-grow: 1;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: #b8b5b0;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+
+#footer-line {
+  border: none;
+  height: 2px;
+  background-color: #b8b5b0;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  height: 50%;
+  background-color: #fff;
+  padding-top: 10px;
+  margin: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 80%;
+  height: auto;
+}
+
+.redes-sociais ul {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  padding-top: 20px;
+  gap: 12px;
+}
+
+.redes-sociais ul li {
+  background-color: #d3d3d3;
+  border-radius: 50%;
+  padding: 6px;
+  text-align: center;
+}
+
+.redes-sociais ul li:hover {
+  transform: scale(1.07);
+}
+
+.header-end {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  border: 2px solid #b8b5b0;
+  border-radius: 40px;
+  width: 140px;
+  max-height: 45px;
+  justify-content: space-around;
+}
+
+.menu-btn,
+.perfil {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.menu-btn:hover,
+.perfil:hover {
+  transform: scale(1.07);
+}
+
+.header-end-img {
+  width: 40px;
+  height: 40px;
+}
+
+.corpo img {
+  border-radius: 100%;
+  margin: 10px 0 10px 20px;
+  width: 160px;
+  height: 160px;
+}
+
+#row-1,
+#row-2,
+#row-3 {
+  display: flex;
+  justify-content: center;
+}
+
+.participantes {
+  display: flex;
+  align-items: center;
+  border: solid 1px black;
+  border-radius: 90px;
+  margin: 30px 45px 10px 45px;
+  width: 900px;
+  max-height: 180px;
+}
+
+.descricao-participante {
+  font-size: 18px;
+  width: 70%;
+  padding-left: 20px;
+}
+
+.footer {
+  height: 1 0vh;
+  padding-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-footer {
+  display: flex;
+  margin-left: auto;
+  margin-right: 8%;
+  gap: 100px;
+}
+
+.nav-footer a {
+  text-decoration: none;
+  color: #b8b5b0;
+}
+
+.nav-footer a:hover {
+  transform: scale(1.08);
+  color: #454836;
+}
+
+#localizacao {
+  color: #b8b5b0;
+  display: flex;
+  margin-left: 10px;
+}
+
+.localizacao-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    margin: 0 20px;
+  }
+
+  .nav-footer {
+    margin-left: 20%;
+  }
+
+  .participantes {
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+  }
+
+  .descricao-participante {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-end {
+    margin-top: 10px;
+    width: 100px;
+  }
+
+  .logo img {
+    width: 60%;
+  }
+
+  .nav-footer {
+    flex-direction: column;
+    margin-left: 0;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1742px) {
+  .header {
+    margin: 0 10px;
+  }
+
+  .logo img {
+    width: 50%;
+  }
+
+  .header-end {
+    width: 80px;
+  }
+
+  .corpo img {
+    max-width: 150px;
+    width: 100%; /* Para que a imagem não ultrapasse o container */
+  }
+
+  .nav-footer {
+    gap: 20px;
+  }
+
+  .descricao-participante {
+    font-size: 16px; /* Reduzindo a fonte para melhor legibilidade */
+    padding: 5px; /* Menor padding para telas menores */
+  }
+
+  .participantes {
+    width: 100%; /* Garantindo que os elementos ocupem a largura total disponível */
+  }
+}
+
+@media (max-width: 1477px) {
+  .header {
+    margin: 0 10px;
+  }
+
+  .logo img {
+    width: 50%;
+  }
+
+  .header-end {
+    width: 80px;
+  }
+
+  .corpo img {
+    max-width: 150px;
+    width: 100%; /* Para que a imagem não ultrapasse o container */
+  }
+
+  .nav-footer {
+    gap: 20px;
+  }
+
+  .descricao-participante {
+    font-size: 12px; /* Reduzindo a fonte para melhor legibilidade */
+    padding: 5px; /* Menor padding para telas menores */
+  }
+
+  .participantes {
+    width: 100%; /* Garantindo que os elementos ocupem a largura total disponível */
+  }
+}
+
+@media (max-width: 1025px) {
+  .header {
+    margin: 0 10px;
+  }
+
+  .logo img {
+    width: 50%;
+  }
+
+  .header-end {
+    width: 80px;
+  }
+
+  .corpo img {
+    max-width: 100px;
+    width: 100%; /* Para que a imagem não ultrapasse o container */
+  }
+
+  .nav-footer {
+    gap: 20px;
+  }
+
+  .descricao-participante {
+    font-size: 10px; /* Reduzindo a fonte para melhor legibilidade */
+    padding: 3px; /* Menor padding para telas menores */
+  }
+
+  .participantes {
+    width: 100%; /* Garantindo que os elementos ocupem a largura total disponível */
+  }
+}
