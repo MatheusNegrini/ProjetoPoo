@@ -1,60 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Madrid</title>
-    <link rel="stylesheet" href="./ReservaDeHotel/CSS/styleIndex.css">
-    <link rel="shortcut icon" href="../imagens/icone_logo.ico" type="image/x-icon"> 
+    <link rel="stylesheet" href="../CSS/styleQuartos.css">
+    <link rel="shortcut icon" href="../imagens/icone_logo.ico" type="image/x-icon">
+    <title>Quarto Deluxe</title>
 </head>
-
 <body>
     <section id="container">
         <header class="header">
             <div class="redes-sociais">
                 <ul>
-                    <li><a href="#"> <img src="./ReservaDeHotel/imagens/whatsapp-icon.png" alt="whatsapp"></a></li>
-                    <li><a href="#"> <img src="./ReservaDeHotel/imagens/instagram-icon.png" alt="instagram"></a></li>
-                    <li><a href="#"> <img src="./ReservaDeHotel/imagens/email-icon.png" alt="email"></a></li>
+                    <li><a href="#"> <img src="../imagens/whatsapp-icon.png" alt="whatsapp"></a></li>
+                    <li><a href="#"> <img src="../imagens/instagram-icon.png" alt="instagram"></a></li>
+                    <li class="emailIcon"><a href="#"> <img src="../imagens/email-icon.png" alt="email"></a></li>
                 </ul>
             </div>
 
             <div class="logo">
-                <a href="./index.html">
-                    <img src="ReservaDeHotel/imagens/logodosite.png" alt="Hotel Madrid">
+                <a href="../../index.html">
+                    <img src="../imagens/logodosite.png" alt="Hotel Madrid">
                 </a>
             </div>
 
             <div class="header-end">
-                <button class="menu-btn"><img src="ReservaDeHotel/imagens/notificação-icon.png" class="header-end-img"
+                <button class="menu-btn"><img src="../imagens/notificação-icon.png" class="header-end-img"
                         alt="Notificações"></button>
-                <button class="perfil"><img src="ReservaDeHotel/imagens/perfil-icon.png" class="header-end-img"
+                <button class="perfil">
+                    <a href="../html/login.html">
+                    <img src="../imagens/perfil-icon.png" class="header-end-img"
                         alt="Perfil"></button>
+                    </a>
             </div>
         </header>
         <hr>
+        
+        <div class="conteudo">
+            <div class="corpo-conteudo">
+                <div class="quarto-info">
+                    <h1>Quarto Deluxe</h1>
+                    <div class="image-grid">
+                        <img src="../imagens/Quarto/Deluxe/bb.png" alt="Quarto principal">
+                        <div class="small-images">
+                            <img src="../imagens/Quarto/Deluxe/cc.png" alt="Quarto adicional">
+                            <img src="../imagens/Quarto/Deluxe/dd.png" alt="Sala de estar">
+                        </div>
+                    </div>
+                    
+                    <p>Experimente o luxo neste elegante apartamento de dois quartos e dois banheiros. Desfrute de uma área de estar aberta e iluminada, uma cozinha totalmente equipada e quartos macios para uma estadia tranquila. Perfeito para famílias ou grupos, este quarto é a sua base ideal para explorar!</p>
 
-        <div class="corpo">
-            
-        </div>
-        <hr>
-
-        <div class="footer">
-            <img class="localização-icon" src="ReservaDeHotel/imagens/pin-icon.png" alt="Localização">
-            <div id="localização">
-
-                <p>Av. Santo Amaro, 1411 - Vila Nova Conceição</p>
-                <p>São Paulo - SP</p>
+                    <h2>Comodidades</h2>
+                    <ul class="comodidades">
+                        <li><img src="../imagens/Quarto/wifi.png">Wi-Fi</li>
+                        <li><img src="../imagens/Quarto/ar cond.png">Ar Condicionado</li>
+                        <li><img src="../imagens/Quarto/tv.png">TV</li>
+                        <li><img src="../imagens/Quarto/cafeteira.png">Cafeteira</li>
+                        <li><img src="../imagens/Quarto/maquina de lavar.png">Lavadora de Roupas</li>
+                        <li><img src="../imagens/Quarto/lava louça.png">Lava Louças</li>
+                    </ul>
+                </div>
+                
+                <div class="reserva-info-total">
+                    <div class="reserva-info-links">
+                        <img src="../imagens/Quarto/compartilhar.png">
+                        <a href=""> Compartilhar </a>
+                        <img src="../imagens/Quarto/like.png">
+                        <a href=""> Salvar</a>
+                    </div>
+                    <div  class="reserva-info">
+                        <div class="price">
+                            <span>R$ 1.286</span> <small>noite</small>
+                        </div>
+                        <div class="reserva-dates">
+                            <input type="text" placeholder="CHECK-IN">
+                            <input type="text" placeholder="CHECKOUT">
+                        </div>
+                        <button class="btn-reservar">Reservar</button>
+                        <div class="resumo">
+                            <p>R$ 1.286 x 4 noites <span>R$ 5.144</span></p>
+                            <p>Taxa de limpeza <span>R$ 350</span></p>
+                            <hr>
+                            <p class="total">Total <span>R$ 5.494</span></p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <nav class="nav-footer">
-                <a href="./informacoes.html">Informações</a>
-                <a href="#">Suporte</a>
-                <a href="#">Termos de Uso</a>
-                <a href="#">Políticas de Privacidade</a>
-            </nav>
+
+            <hr>
+
+            <div class="footer">
+                <img class="localização-icon" src="../imagens/pin-icon.png" alt="Localização">
+                <div id="localização">
+                    <p>Av. Santo Amaro, 1411 - Vila Nova Conceição</p>
+                    <p>São Paulo - SP</p>
+                </div>
+                <nav class="nav-footer">
+                    <a href="../html/informacoes.html">Informações</a>
+                    <a href="#">Suporte</a>
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Políticas de Privacidade</a>
+                </nav>
+            </div>
         </div>
+
     </section>
 </body>
-
 </html>

@@ -1,6 +1,7 @@
 /* HEADER */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Inicio HEADER */
 * {
     margin: 0;
     padding: 0;
@@ -106,229 +107,12 @@ hr {
     object-fit: contain;
 }
 
-.quartos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 45px;
-    margin-bottom: 50px;
-    
-}
-
-.quartos a{
-    color: black;
-    text-decoration: none;
-    
-}
-
-.quarto-deluxe,
-.quarto-master,
-.quarto-standard {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #ccc;
-    border-radius: 30px;
-    padding: 20px;
-    width: 30%;
-}
-
-.quarto-deluxe:hover,
-.quarto-master:hover,
-.quarto-standard:hover {
-    transform: scale(1.07);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-.categoria-quarto {
-    display: flex;
-    justify-content: space-between;
-    font-size: 23px;
-    font-weight: 450;
-    margin-top: 20px;
-}
-
-.descrição-quarto {
-    margin: 9px 0px 20px 0px;
-}
-
-.preço-quarto {
-    font-size: 20px;
-    font-weight: 450
-}
-
-.avaliação {
-    display: flex;
-    align-items: center;
-    font-size: 15px;
-}
-
-.avaliação img {
-    margin-right: 5px;
-    width: 15px;
-}
-
-.barra-de-pesquisa-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 30px;
-    padding-bottom: 40px;
-}
-
-.barra-de-pesquisa {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-    border: solid 2px #b8b5b0;
-    border-radius: 50px;
-    overflow: hidden;
-    padding: 0;
-    width: 100%;
-    max-width: 900px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.363);
-}
-
-.input-group {
-    flex: 1;
-    padding: 15px 20px;
-    text-align: center;
-    position: relative;
-    background-color: white;
-    border-radius: 0;
-}
-
-.input-group:not(.hospedes)::after {
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 10px;
-    bottom: 10px;
-    width: 1px;
-}
-
-.input-group label {
-    display: block;
-    font-size: 25px;
-    margin-bottom: 5px;
-}
-
-.input-group input {
-    width: 100%;
-    padding: 8px;
-    border: none;
-    background-color: transparent;
-    text-align: center;
-    font-size: 14px;
-    outline: none;
-}
-
-.input-group.hospedes {
-    background-color: #c6b89e;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50px;
-    position: relative;
-}
-
-.input-group.hospedes input {
-    background-color: transparent;
-    text-align: center;
-    margin-top: 5px;
-    border-radius: 0;
-    width: 100%;
-}
-
-.pesquisar {
-    background-color: #5a6041;
-    border: none;
-    padding: 15px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-
-}
-
-.pesquisar img {
-    width: 20px;
-    height: 20px;
-}
-
-.pesquisar:hover {
-    background-color: #454836;
-
-}
-
-.input-group:not(.hospedes)::after {
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 10px;
-    bottom: 10px;
-    width: 1px;
-    background-color: #e0e0e0;
-
-}
-
-.input-group.checkout::after {
-    display: none;
-
-}
-
-.footer {
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav-footer {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 43%;
-    gap: 45px;
-
-}
-
-.nav-footer>:hover {
-    transform: scale(1.08);
-    color: #454836;
-}
-
-.nav-footer>a {
-    text-decoration: none;
-    color: #b8b5b0;
-}
-
-#localização {
-    color: #b8b5b0;
-}
-
-.localização-icon {
-    width: 25px;
-    height: 30px;
-    margin-right: 8px;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/* END OF HEADER */
+/* Fim HEADER */
 
 
 body {
     display: flex;
     flex-direction: column; 
-    height: 100vh; 
-    background-color: white;
 }
 
 .main-login {
@@ -449,21 +233,6 @@ h1 {
 .btn:hover {
     background-color: #384b00;
     color: #ffffff;
-}
-
-hr {
-    border: none;
-    height: 2px;
-    background-color: #b8b5b0;
-    margin: 20px 0;
-}
-
-#footer-line {
-    border: none;
-    height: 2px;
-    background-color: #b8b5b0;
-    margin: 0;
-    padding: 0; 
 }
 
 .footer {
