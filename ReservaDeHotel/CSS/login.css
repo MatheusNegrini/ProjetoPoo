@@ -34,7 +34,7 @@ hr {
 .header {
     height: 50%;
     background-color: #fff;
-    margin-top: 0px;
+    margin-top: 30px;
     margin-bottom: 20px;
     margin-left: 50px;
     margin-right: 50px;
@@ -78,7 +78,7 @@ hr {
 
 
 .header-end {
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     align-items: center;
     border: 2px solid #b8b5b0;
@@ -121,9 +121,9 @@ body {
     height: auto; 
     display: flex;
     border: 2px solid gray;
-    margin: 20px auto; 
-    padding-bottom: 0; 
+    margin: 20px auto;  
     flex-grow: 1; 
+    margin-bottom: 11%;
 }
 
 .left-login {
@@ -237,7 +237,7 @@ h1 {
 
 .footer {
     width: 100%; 
-    padding: 12px 0; 
+     
     display: flex;
     justify-content: space-between; 
     align-items: center;
