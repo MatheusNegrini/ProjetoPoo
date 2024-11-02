@@ -73,16 +73,39 @@
                             <span>R$ 1.286</span> <small>noite</small>
                         </div>
                         <div class="reserva-dates">
-                            <input type="text" placeholder="CHECK-IN">
-                            <input type="text" placeholder="CHECKOUT">
-                        </div>
+                            <input type="text" id="checkin-date" placeholder="CHECK-IN" title="Digite a data de entrada" onfocus="(this.type='date')" onblur="if(!this.value) this.type='text'">
+                            <input type="text" id="checkout-date" placeholder="CHECKOUT" title="Digite a data de saída" onfocus="(this.type='date')" onblur="if(!this.value) this.type='text'">
+                        </div>       
+                        <div class="hospedes-selecao">
+                            <label for="hospedes">Hóspedes:</label>
+                            <div class="contador-hospedes">
+                                <button onclick="alterarHospedes(-1)">-</button>
+                                <input id="hospedes" type="number" value="1" min="1" max="4" readonly>
+                                <button onclick="alterarHospedes(1)">+</button>
+                            </div>
+                            <p id="aviso" class="aviso-limite">O quarto suporta no máximo 4 hóspedes.</p>
+                        </div>                                         
                         <button class="btn-reservar">Reservar</button>
+                        <p id="erro-reserva" class="erro-reserva">Preencha as datas de Check-in e Check-out corretamente.</p>
                         <div class="resumo">
-                            <p>R$ 1.286 x 4 noites <span>R$ 5.144</span></p>
-                            <p>Taxa de limpeza <span>R$ 350</span></p>
+                            <p>R$ <span id="valor-por-noite" data-preco="1286">1.286</span> x 
+                            <span id="noites">-</span> noites 
+                            <span id="preco-total-noites">R$ ----</span></p>
+                            
+                            <p>Taxa de limpeza <span id="taxa-limpeza" data-preco="350">R$ 350</span></p>
                             <hr>
-                            <p class="total">Total <span>R$ 5.494</span></p>
+                            <p class="total">Total <span id="preco-total">R$ ----</span></p>
                         </div>
+                        
+                        <!-- POPUP -->
+
+                        <div id="popup" class="popup" style="display: none;">
+                            <p>Reserva feita com sucesso!</p>
+                            <a href="../../index.html">
+                            <button onclick="closePopup()">Fechar</button>
+                            </a>    
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -105,5 +128,6 @@
         </div>
 
     </section>
+    <script src="../JS/app.js"></script>
 </body>
 </html>

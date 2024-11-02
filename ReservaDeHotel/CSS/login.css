@@ -19,32 +19,13 @@ body {
 
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-hr {
-    border: none;
-    height: 2px;
-    background-color: #b8b5b0;
-    margin-top: 30px;
-}
-
-.header {
-    height: 50%;
-    background-color: #fff;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
+.redes-sociais{
     display: flex;
-    justify-content: space-between;
-}
+    justify-items: center;
+    padding-left:45%;
+    padding-top: 5px;
+    padding-bottom: 1%;
 
-.logo img{
-    width: 80%;
-    height: auto;
 }
 
 .redes-sociais>ul {
@@ -75,38 +56,6 @@ hr {
     transform: scale(1.07);
 }
 
-
-
-.header-end {
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    border: 2px solid #b8b5b0;
-    border-radius: 40px;
-    width: 140px;
-    max-height: 45px;
-    justify-content: space-around;
-
-}
-
-.menu-btn,
-.perfil {
-    border: #ffffff00;
-    background-color: #ffffff00;
-    cursor: pointer;
-}
-
-.menu-btn:hover,
-.perfil:hover {
-    transform: scale(1.07)
-}
-
-.header-end-img {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
-}
-
 /* Fim HEADER */
 
 
@@ -121,9 +70,9 @@ body {
     height: auto; 
     display: flex;
     border: 2px solid gray;
-    margin: 20px auto;  
+    margin: 5px auto;  
     flex-grow: 1; 
-    margin-bottom: 11%;
+    margin-bottom: 5%;
 }
 
 .left-login {
@@ -237,7 +186,6 @@ h1 {
 
 .footer {
     width: 100%; 
-     
     display: flex;
     justify-content: space-between; 
     align-items: center;

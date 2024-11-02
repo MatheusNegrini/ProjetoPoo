@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Madrid</title>
     <link rel="stylesheet" href="./ReservaDeHotel/CSS/styleIndex.css">
+    <script src="./ReservaDeHotel/JS/index.js"></script>
     <link rel="shortcut icon" href="./ReservaDeHotel/imagens/icone_logo.ico" type="image/x-icon"> 
 </head>
 
@@ -40,6 +41,20 @@
 
         <div class="corpo">
             <div class="barra-de-pesquisa-container">
+
+                <div id="popup-quartos" class="popup" style="display:none;">
+                    <h3>Escolha seu Quarto</h3>
+                    <p>Deluxe: R$ 1286 + R$ 350 taxa de limpeza</p>
+                    <button onclick="escolherQuarto('Deluxe')">Escolher Deluxe</button>
+                    <p>Master: R$ 732 + R$ 350 taxa de limpeza</p>
+                    <button onclick="escolherQuarto('Master')">Escolher Master</button>
+                    <p>Standard: R$ 358 + R$ 350 taxa de limpeza</p>
+                    <button onclick="escolherQuarto('Standard')">Escolher Standard</button>
+                    <button class="botaoFechar" style="margin-top: 20px; display: block; margin-left: 80%; background-color:  #8FBF8F;" onclick="fecharPopupQuartos()">Fechar</button>
+                </div>
+                
+                <div id="popup-recibo" class="popup" style="display:none;"></div>
+                
                 <div class="barra-de-pesquisa">
                     <div class="input-group">
                         <label for="checkin">CHECK-IN</label>
@@ -52,17 +67,13 @@
                     <div class="input-group hospedes">
                         <label for="hospedes">HÓSPEDES</label>
                         <input type="text" placeholder="Insira a quantidade" id="hospedes">
-                        <button class="pesquisar">
+                        <button class="pesquisar" onclick="mostrarPopupQuartos()">
                             <img src="ReservaDeHotel/imagens/lupa-icon.png" alt="Pesquisar">
                         </button>
+                        <div id="erro-reserva" style="display:none; color:red;"></div>
                     </div>
                 </div>
             </div>
-
-
-
-
-
 
             <div class="quartos">
                 <div class="quarto-deluxe">

@@ -105,6 +105,74 @@ hr {
     object-fit: contain;
 }
 
+/* Inicio POP-UP  */
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f9f9f9;
+    padding: 30px;
+    border: 2px solid #69715b;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -40%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.popup h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #454836;
+    font-family: 'Arial', sans-serif;
+}
+
+.popup p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #454836;
+}
+
+.popup button {
+    background-color: #69715b;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+
+.popup button:hover {
+    background-color: #5a5e52;
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Fim POP-UP */
+
+
+
 .quartos {
     display: flex;
     flex-wrap: wrap;
