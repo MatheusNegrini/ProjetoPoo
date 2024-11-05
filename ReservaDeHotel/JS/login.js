@@ -43,6 +43,6 @@ document.querySelector('.form').addEventListener('submit', function (event) {
 
     // Chamar a função de cadastro
     if (cadastrarUsuario(nome, telefone, email, senha)) {
-        window.location.href = "./login.html"; // Redireciona para a página de login
+        window.location.href = "../../index.html"; // Redireciona para a página de login
     }
 });
